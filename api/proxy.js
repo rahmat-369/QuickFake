@@ -1,7 +1,7 @@
 const axios = require('axios');
 const FormData = require('form-data');
 
-// API Key ImgBB kamu (Ditaruh di sini agar aman di sisi server)
+// API Key ImgBB kamu
 const IMGBB_KEY = '4f2dcd79dcf47d778991fc93e3320c09'; 
 const BASE_URL = 'https://api.zenzxz.my.id'; 
 
@@ -33,4 +33,4 @@ async function handleRequest(fields, files) {
     return `${BASE_URL}${endpoint}?${params.toString()}`;
 }
 
-module.exports = { handleRequest };
+module.exports = { handleRequest }; 
