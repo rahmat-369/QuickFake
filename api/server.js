@@ -1,7 +1,8 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
-const proxy = require('../proxy');
+// Ini yang diperbaiki, pakai titik satu (.) karena proxy.js ada di sebelah server.js
+const proxy = require('./proxy'); 
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
